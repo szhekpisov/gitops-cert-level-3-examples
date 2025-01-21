@@ -10,38 +10,38 @@ spec:
   - list:
       elements:
       - env: qa
-        region: us  
-        type: non-prod   
-        version: qa     
+        region: us
+        type: non-prod
+        version: qa
       - env: staging-asia
         region: asia
-        type: non-prod  
-        version: staging       
+        type: non-prod
+        version: staging
       - env: staging-eu
         region: eu
-        type: non-prod  
-        version: staging       
+        type: non-prod
+        version: staging
       - env: staging-us
         region: us
-        type: non-prod  
-        version: staging       
+        type: non-prod
+        version: staging
       - env: prod-eu
-        region: eu  
-        type: prod  
-        version: prod       
-      - env: prod-us
-        region: us 
+        region: eu
         type: prod
-        version: prod         
+        version: prod
+      - env: prod-us
+        region: us
+        type: prod
+        version: prod
       - env: integration-gpu
-        region: us 
+        region: us
         type: non-production
-        version: qa         
+        version: qa
       - env: integration-non-gpu
-        region: us 
+        region: us
         type: non-production
-        version: qa         
-  template:      
+        version: qa
+  template:
     metadata:
       name: '{{.env}}' 
     spec:
